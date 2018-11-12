@@ -14,6 +14,7 @@ ds=0
 `g++ rancomp.cpp -O3 -o C`
 while [ $count -lt 5050 ]
 do
+	#Format for the line below: ./C <number of nodes> <maximum edge weight> <density> smallgraph
 	./C $count 1000 75 > smallgraph;
 	a=`./rb < smallgraph`;
 	c=`./fib < smallgraph`;
