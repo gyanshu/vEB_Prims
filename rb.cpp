@@ -584,17 +584,18 @@ int main(int argc, char* argv[])
     int edges;
     cin>>edges;
 
-	/*
 	//Time computation
 	auto start = std::chrono::high_resolution_clock::now(); 
 	primMST(graph, V); 
 	auto stop = std::chrono::high_resolution_clock::now(); 
 	auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(stop - start); 
-	cout<<duration.count();  */ 
+	cout<<duration.count();
 
+	/*
 	//Space computation
 	primMST(graph, V); 
 	getrusage(RUSAGE_SELF,&r_usage);
 	cout<<(r_usage.ru_maxrss)/1024;
+	*/
 	return 0; 
 }

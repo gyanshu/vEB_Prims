@@ -337,15 +337,14 @@ int main()
         sum += w[i];
     cout<<sum<<endl;*/
 
-    /*
 	//Time computation
     auto stop = chrono::high_resolution_clock::now(); 
     auto duration = chrono::duration_cast<chrono::milliseconds>(stop - start); 
-    cout<<duration.count();*/
-
+    cout<<duration.count();
+    /*
     //Space computation
     getrusage(RUSAGE_SELF,&r_usage);
-	cout<<(r_usage.ru_maxrss)/1024;
+	cout<<(r_usage.ru_maxrss)/1024;*/
 /*
 	//Printing output MST
     cout<<"MST edge set is"<<endl; 
